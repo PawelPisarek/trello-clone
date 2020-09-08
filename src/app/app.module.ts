@@ -13,27 +13,21 @@ import {AppRoutingModule} from './app-routing.module';
 import {
   NbButtonModule,
   NbCardModule,
-  NbChatModule,
   NbDatepickerModule,
-  NbDialogModule, NbInputModule,
-  NbMenuModule, NbSelectModule,
+  NbDialogModule,
+  NbInputModule,
+  NbMenuModule,
+  NbSelectModule,
   NbSidebarModule,
-  NbToastrModule,
   NbWindowModule,
 } from '@nebular/theme';
-import {CardListComponent} from './main/card-list/card-list.component';
-import { CardBoxComponent } from './main/card-box/card-box.component';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
-import {DialogNamePromptComponent} from './main/dialog-name-prompt/dialog-name-prompt.component';
 import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent,
-    CardListComponent,
-    CardBoxComponent,
-    DialogNamePromptComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

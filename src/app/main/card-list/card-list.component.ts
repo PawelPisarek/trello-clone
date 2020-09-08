@@ -2,10 +2,10 @@ import {Component} from '@angular/core';
 import {CardCollectorModel} from '../models/card-collector.model';
 import {CardModel} from '../models/card.model';
 import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag-drop';
-import {DialogNamePromptComponent} from '../dialog-name-prompt/dialog-name-prompt.component';
 import {NbDialogService} from '@nebular/theme';
 import {TaskNewModel} from '../models/task-new.model';
 import {take} from 'rxjs/operators';
+import {TaskFormComponent} from '../task-form/task-form.component';
 
 @Component({
   selector: 'ngx-card-list',
@@ -45,7 +45,7 @@ export class CardListComponent {
   }
 
   addCard() {
-    const dialogNamePromptComponentNbDialogRef = this.dialogService.open(DialogNamePromptComponent);
+    const dialogNamePromptComponentNbDialogRef = this.dialogService.open(TaskFormComponent);
     dialogNamePromptComponentNbDialogRef.componentRef.instance.cardCollectorModels = this.allLists;
     dialogNamePromptComponentNbDialogRef
       .onClose.pipe(take(1)).subscribe((name: TaskNewModel) => {

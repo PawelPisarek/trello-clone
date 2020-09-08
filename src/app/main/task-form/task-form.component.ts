@@ -1,26 +1,25 @@
-import {Component, OnInit} from '@angular/core';
-import {NbDialogRef} from '@nebular/theme';
+import { Component, OnInit } from '@angular/core';
 import {FormControl} from '@angular/forms';
 import {CardCollectorModel} from '../models/card-collector.model';
+import {NbDialogRef} from '@nebular/theme';
 import {TaskNewModel} from '../models/task-new.model';
 
 @Component({
-  selector: 'ngx-dialog-name-prompt',
-  templateUrl: 'dialog-name-prompt.component.html',
-  styleUrls: ['dialog-name-prompt.component.scss'],
+  selector: 'ngx-task-form',
+  templateUrl: './task-form.component.html',
+  styleUrls: ['./task-form.component.scss'],
 })
-export class DialogNamePromptComponent implements OnInit {
+export class TaskFormComponent implements OnInit {
 
   form = new FormControl();
-  public cardCollectorModels: CardCollectorModel[];
+  cardCollectorModels: CardCollectorModel[];
 
-  constructor(protected ref: NbDialogRef<DialogNamePromptComponent>) {
+  constructor(protected ref: NbDialogRef<TaskFormComponent>) {
   }
 
   ngOnInit(): void {
     this.form.patchValue(this.cardCollectorModels[0]);
   }
-
 
   cancel() {
     this.ref.close();
