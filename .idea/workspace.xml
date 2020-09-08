@@ -43,9 +43,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d6b2ef2-0d21-48bd-9a40-1d5e5222009a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/polyfills.ts" afterDir="false" />
-    </list>
+    <list default="true" id="2d6b2ef2-0d21-48bd-9a40-1d5e5222009a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -143,7 +141,7 @@
       <workItem from="1599465579490" duration="1792000" />
       <workItem from="1599554763682" duration="12541000" />
       <workItem from="1599569772182" duration="10143000" />
-      <workItem from="1599597678936" duration="2945000" />
+      <workItem from="1599597678936" duration="3297000" />
     </task>
     <servers />
   </component>
